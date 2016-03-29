@@ -1,0 +1,16 @@
+		body {
+				background-color: lightblue;
+		}
+		h1 {
+			color:darkred;
+		}
+		h2 {
+			color:darkgreen;
+		}
+		p {
+			background-color:darkblue;
+			color:orangered;
+		}
+		a {
+			border: 2px solid black;
+		}
