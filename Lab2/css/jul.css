@@ -14,3 +14,19 @@ h1 {
 h2 {
 		color:darkgray;
 }
+table {
+		background-color:white;
+		border:2px solid black;
+}
+td {
+		border:1px solid black;
+}
+th {
+		border:2px solid black;
+}
+.negative {
+		background-color:red;
+}
+.positive {
+		background-color:green;
+}
