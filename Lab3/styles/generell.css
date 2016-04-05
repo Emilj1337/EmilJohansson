@@ -1,0 +1,55 @@
+body {
+			background-color: rgb(220,230,255)
+}
+fieldset img {
+			width: 150px;
+			border-radius: 30% 30%/25%;
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+}
+fieldset {
+			width: 290px;
+			height: 400px;
+			float: left;
+}
+.productid {
+			font-weight: bold;
+}
+.displayprice {
+			color: red;
+			font-size: 2rem;
+			font-weight: bold;
+}
+.orderamount {
+			width: 50px;
+			margin-left: 5.5rem;
+			
+}
+fieldset p {
+			text-align: center;
+			margin-left: auto;
+			margin-right: auto;
+}
+.authorfoot {
+			font-style: italic;
+}
+footer {
+			clear: both;
+}
+td img {
+			width: 80px;
+			display: block;
+}
+table {
+			border: solid black 4px;
+			border-spacing: 75px 5px;
+			width: 700px;
+}
+tr {
+			border: solid gold 2px;
+}
+td {
+			width: 90px;
+			height: 90px;
+}
