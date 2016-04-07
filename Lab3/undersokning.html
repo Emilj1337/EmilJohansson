@@ -2,23 +2,71 @@
 <html>
 
 <head>
-	<title></title>
 	<meta charset="utf-8">
+	<title>Undersökning</title>
+	<meta name="author" content="Emil Johansson" />
+	<link href="styles/generell.css" type="text/css" rel="stylesheet" />
 </head>
 
 <body>
 	<header>
-		<ul>
-			<li></li>
-			<li></li>
-			<li></li>
-		</ul>
+		<h2>Undersökning</h2>
 	</header>
-	
-	<article>
-	</article>
-	
+
+<form>
+	<table id="surveytable">
+		<tr>
+			<td>Om dig</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>Kön:</td>
+			<td><input type="radio" name="Gender" value="Man" />Man
+			<input type="radio" name="Gender" value="Kvinna" />Kvinna
+			<input type="radio" name="Gender" value="Vet ej/Annat" />Vet ej/Annat</td>
+		</tr>
+		<tr>
+			<td>Ålder:</td>
+			<td><input type="radio" name="Age" value="0-20" />0-20
+			<input type="radio" name="Age" value="21-35" />21-35
+			<input type="radio" name="Age" value="36+" />36+</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>Om ditt köp</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td colspan="2">Hur nöjd var du med din köpupplevelse? (1=Inte alls, 6=Supernöjd) <br />
+			<input type="radio" name="Satisfaction" value="1" />1
+			<input type="radio" name="Satisfaction" value="2" />2
+			<input type="radio" name="Satisfaction" value="3" />3
+			<input type="radio" name="Satisfaction" value="4" />4
+			<input type="radio" name="Satisfaction" value="5" />5
+			<input type="radio" name="Satisfaction" value="6" />6</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+		</tr>
+	</table>
+</form>
 	<footer>
+		<p>
+		<span class="authorfoot">Emil Johansson</span>
+		</p>
 	</footer>
 </body>
 
