@@ -2,23 +2,60 @@
 <html>
 
 <head>
-	<title></title>
 	<meta charset="utf-8">
+	<meta name="author" content="Emil Johansson">
+	<title>Kvitto</title>
+	<link href="styles/generell.css" type="text/css" rel="stylesheet" />
 </head>
 
-<body>
+<body class="receit">
 	<header>
-		<ul>
-			<li></li>
-			<li></li>
-			<li></li>
-		</ul>
 	</header>
-	
-	<article>
-	</article>
+
+<h1>Tack för ditt köp!</h1>
+<h3>Kvittot visas nedan:</h3>
+<table id="receittable">
+	<tr>
+		<th>Produkt</th>
+		<th>Namn</th>
+		<th>Antal</th>
+		<th>Styckpris</th>
+		<th>Totalt</th>
+	</tr>
+	<tr>
+		<td><img src="images/mariokart8.jpg" alt="Mario Kart 8" /></td>
+		<td>Mario Kart 8 - Wii U</td>
+		<td>1 st</td>
+		<td>299 SEK</td>
+		<td>299 SEK</td>
+	</tr>
+	<tr>
+		<td><img src="images/sims3.jpg" alt="The Sims 3" /></td>
+		<td>The Sims 3 - PC</td>
+		<td>1 st</td>
+		<td>189 SEK</td>
+		<td>189 SEK</td>
+	</tr>
+	<tr>
+		<td id="shipcol">Frakt</td>
+		<td>-</td>
+		<td>-</td>
+		<td>-</td>
+		<td>29 SEK</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td id="totalsum">517 SEK</td>
+	</tr>
+</table>
 	
 	<footer>
+		<a href="undersokning.html"><input type="submit"
+			value="Hjälp oss att bli bättre!"
+			id="surveybutton" /></a>
 	</footer>
 </body>
 

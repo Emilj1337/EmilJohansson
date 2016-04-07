@@ -12,19 +12,87 @@
 	<header>
 	</header>
 	
-<table>
+	<h1>Din Kundkorg</h1>
+<table id="carttable">
 	<tr>
-		<td><img src="images/mariokart8.jpg" alt="Mario Kart 8" /></td>
-		<td></td>
-		<td></td>
+		<th class="trashcol"></th>
+		<th>Produkt</th>
+		<th>Namn</th>
+		<th>Antal</th>
+		<th>Styckpris</th>
+		<th>Totalt</th>
 	</tr>
 	<tr>
+		<td class="trashcol"><img src="images/can.png" alt="Soptunna" title="Ta bort vara" class="trashimg" /></td>
+		<td><img src="images/mariokart8.jpg" alt="Mario Kart 8" /></td>
+		<td>Mario Kart 8 - Wii U</td>
+		<td><input type="number" class="cartorderamount" max="10" min="1" value="1" /></td>
+		<td>299 SEK</td>
+		<td>299 SEK</td>
+	</tr>
+	<tr>
+		<td class="trashcol"><img src="images/can.png" alt="Soptunna" title="Ta bort vara" class="trashimg" /></td>
 		<td><img src="images/sims3.jpg" alt="The Sims 3" /></td>
+		<td>The Sims 3 - PC</td>
+		<td><input type="number" class="cartorderamount" max="10" min="1" value="1" /></td>
+		<td>189 SEK</td>
+		<td>189 SEK</td>
+	</tr>
+	<tr>
+		<td class="trashcol"></td>
+		<td id="shipcol">Frakt</td>
+		<td>-</td>
+		<td>-</td>
+		<td>-</td>
+		<td>29 SEK</td>
+	</tr>
+	<tr>
+		<td class="trashcol"></td>
 		<td></td>
 		<td></td>
+		<td></td>
+		<td></td>
+		<td id="totalsum">517 SEK</td>
 	</tr>
 </table>
-	
+<h1>Leveransuppgifter</h1>
+<form>
+	<table id="shiptable">
+		<tr>
+			<td class="customer">Förnamn:</td>
+			<td><input required="required" name="Fornamn" /></td>
+		</tr>
+		<tr>
+			<td>Efternamn:</td>
+			<td><input required="required" name="Efternamn" /></td>
+		</tr>
+		<tr>
+			<td>Gatuadress:</td>
+			<td><input required="required" name="Gatuadress" /></td>
+		</tr>
+		<tr>
+			<td>Postnummer:</td>
+			<td><input type="number" required="required" name="Postnummer" /></td>
+		<tr>
+			<td>Ort:</td>
+			<td><input required="required" name="Ort" /></td>
+		</tr>
+		</tr>
+		<tr>
+			<td>Telefonnummer:</td>
+			<td><input type="number" required="required" name="Telefonnummer" /></td>
+		</tr>
+		<tr>
+			<td>E-mail:</td>
+			<td><input type="email" required="required" name="Email" /></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td><input type="submit" value="Beställ" id="orderbutton" /></td>
+		</tr>
+	</table>
+</form>
+
 	<footer>
 	</footer>
 </body>
