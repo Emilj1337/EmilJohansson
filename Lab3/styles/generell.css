@@ -94,4 +94,17 @@ td img {
 }
 #surveytable {
 			border: solid black 2px;
+			border-spacing: 10px 5px;
+}
+.surveyhl {
+			font-weight: bold;
+}
+#surveysubmit {
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+}
+#tackbody {
+			text-align: center;
+			margin-top: 10rem;
 }

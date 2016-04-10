@@ -3,20 +3,20 @@
 
 <head>
 	<meta charset="utf-8">
-	<title>Undersökning</title>
+	<title>Marknadsundersökning</title>
 	<meta name="author" content="Emil Johansson" />
 	<link href="styles/generell.css" type="text/css" rel="stylesheet" />
 </head>
 
 <body>
 	<header>
-		<h2>Undersökning</h2>
+		<h2>Marknadsundersökning</h2>
 	</header>
 
-<form>
+<form action="tack.html">
 	<table id="surveytable">
 		<tr>
-			<td><h4>Om dig</h4></td>
+			<td><h3>Om dig:</h3></td>
 			<td></td>
 		</tr>
 		<tr>
@@ -24,14 +24,14 @@
 			<td></td>
 		</tr>
 		<tr>
-			<td>Kön:
+			<td><span class="surveyhl">Kön:</span>
 			<input type="radio" name="Gender" value="Man" />Man
 			<input type="radio" name="Gender" value="Kvinna" />Kvinna
 			<input type="radio" name="Gender" value="Vet ej/Annat" />Vet ej/Annat</td>
 			<td></td>
 		</tr>
 		<tr>
-			<td>Ålder:
+			<td><span class="surveyhl">Ålder:</span>
 			<input type="radio" name="Age" value="0-20" />0-20
 			<input type="radio" name="Age" value="21-35" />21-35
 			<input type="radio" name="Age" value="36+" />36+</td>
@@ -42,7 +42,7 @@
 			<td></td>
 		</tr>
 		<tr>
-			<td><h4>Om ditt köp</h4></td>
+			<td><h3>Om ditt köp:</h3></td>
 			<td></td>
 		</tr>
 		<tr>
@@ -50,17 +50,16 @@
 			<td></td>
 		</tr>
 		<tr>
-			<td colspan="2">Hur nöjd var du med din köpupplevelse? (1=Inte alls, 6=Supernöjd) <br />
+			<td colspan="2"><span class="surveyhl">Hur nöjd var du med din köpupplevelse? (1=Inte alls, 6=Supernöjd) </span><br />
 			<input type="radio" name="Satisfaction" value="1" />1
 			<input type="radio" name="Satisfaction" value="2" />2
 			<input type="radio" name="Satisfaction" value="3" />3
 			<input type="radio" name="Satisfaction" value="4" />4
 			<input type="radio" name="Satisfaction" value="5" />5
 			<input type="radio" name="Satisfaction" value="6" />6</td>
-			<td></td>
 		</tr>
 		<tr>
-			<td>Hur hörde du talas om oss? (Det går att bocka i flera)</td>
+			<td><span class="surveyhl">Hur hörde du talas om oss? (Det går att bocka i flera)</span></td>
 			<td></td>
 		</tr>
 		<tr>
@@ -71,12 +70,29 @@
 			<td></td>
 		</tr>
 		<tr>
-			<td></td>
+			<td>
+				<span class="surveyhl">Vilken sak gillar du mest med webbutiken?</span>
+				<select>
+					<option value="Sortimentet">Sortimentet</option>
+					<option value="Priserna">Priserna</option>
+					<option value="Servicen">Servicen</option>
+					<option value="Anvandarvanligheten">Användarvänligheten</option>
+				</select>
+			</td>
 			<td></td>
 		</tr>
 		<tr>
+			<td><span class="surveyhl">Övrigt:</span></td>
 			<td></td>
+		</tr>
+		<tr>
+			<td><textarea name="Ovrigt" cols="60" rows="3"></textarea></td>
 			<td></td>
+		</tr>
+		<tr>
+			<td colspan="2">
+			<input type="submit" id="surveysubmit" value="Skicka in" />
+			</td>
 		</tr>
 	</table>
 </form>
