@@ -13,6 +13,9 @@ fieldset {
 			height: 400px;
 			float: left;
 }
+legend {
+			font-weight: bold;
+}
 .productid {
 			font-weight: bold;
 }
