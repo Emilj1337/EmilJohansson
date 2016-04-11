@@ -18,11 +18,14 @@ legend {
 }
 .productid {
 			font-weight: bold;
+			text-align: center;
 }
 .displayprice {
 			color: red;
 			font-size: 2rem;
 			font-weight: bold;
+			text-align: center;
+			margin: 8px 0;
 }
 .orderamount {
 			width: 50px;
