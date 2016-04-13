@@ -38,27 +38,25 @@ h2 {
 	padding: 8px 10px;
 	margin: 10px 70px;
 	border-radius: 10px;
+	font-weight: bold;
 }
 h3 {
 	background-color: gray;
 	color: red;
-	padding: 10px 10px;
-	margin: 20px auto;
-	float: left;
 	border-radius: 10px;
 	border: 1px solid darkgray;
+	padding: 8px 5px;
+	margin: 10px 10px;
 }
-fieldset {
+table {
 	background-color: black;
-	border: 2px solid black;
 	margin: 20px 5px;
-	border: 2px solid white;
 	text-align: center;
 }
-	fieldset img {
+	table img {
 		width: 8rem;
 	}
-	fieldset figure {
+	table figure {
 		display: block;
 		float: left;
 		width: 14rem;
@@ -66,11 +64,12 @@ fieldset {
 		margin-left: auto;
 		margin-right: auto;
 	}
-	fieldset figcaption {
+	table figcaption {
 		color: white;
 	}
-	#fieldleft {
+	#tableleft {
 		border-radius: 50px 0px 0px 0px;
+		columns: 80px 3;
 	}
 footer {
 	background-color: black;
