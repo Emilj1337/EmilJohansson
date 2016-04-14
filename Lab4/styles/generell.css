@@ -38,7 +38,9 @@ h2 {
 	padding: 8px 10px;
 	margin: 10px 70px;
 	border-radius: 10px;
+	border: 1px solid white;
 	font-weight: bold;
+	font-family: impact, 'Times New Roman', Arial;
 }
 h3 {
 	background-color: gray;
@@ -55,6 +57,9 @@ table {
 }
 	table img {
 		width: 8rem;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
 	}
 	table figure {
 		display: block;
@@ -69,8 +74,53 @@ table {
 	}
 	#tableleft {
 		border-radius: 50px 0px 0px 0px;
-		columns: 80px 3;
+		border-right: 2px solid white;
+		border-bottom: 2px solid white;
 	}
+	#tablemid {
+		border-bottom: 2px solid white;
+	}
+	#tableright {
+		border-radius: 0px 50px 0px 0px;
+		border-left: 2px solid white;
+		border-bottom: 2px solid white;
+	}
+		#tableright h2 {
+			margin-left: 5px;
+			margin-right: 15px;
+		}
+.orderamount {
+	margin-bottom: 10px;
+}
+#asidecamp {
+	background-color: black;
+ 	margin: 20px 10px 20px 10px;
+	font-family: impact, 'Times New Roman', Arial;
+}
+	#asidecamp img {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		width: 150px;
+	}
+#asideheader {
+	color: red;
+	background-color: black;
+	padding-top: 20px;
+	border: 0;
+	margin: 10px 10px;
+}
+#asidelargetext {
+	font-size: 20pt;
+	color: white;
+	text-align: center;
+	margin-top: 10px;
+}
+#asidesmalltext {
+	color: white;
+	text-align: center;
+	padding-bottom: 20px;
+}
 footer {
 	background-color: black;
 	color: white;
