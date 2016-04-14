@@ -1,19 +1,36 @@
 section {
 	/* border: 2px solid black; */
 }
-header {
+.blackheader {
 	background-color: black;
 }
 .logfield {
 	width: 110px;
 	float: left;
 	margin-right: 5px;
+	margin-top: 5px;
 	border-radius: 5px;
 }
 .logbutton {
 	float: left;
 	margin-right: 5px;
+	margin-top: 5px;
 	border-radius: 5px;
+}
+.searchfield {
+	width: 300px;
+	margin-top: 5px;
+}
+.searchbutton {
+	width: 86px;
+	margin-right: 5px;
+	margin-left: 2px;
+	border-radius: 5px;
+}
+#kundkorgen {
+	display: block;
+	float: left;
+	margin-top: 5px;
 }
 .navcol {
 	background-color: rgb(50,50,50);
@@ -28,6 +45,18 @@ nav {
 		margin-right: 55px;
 		color: white;
 	}
+#britflag {
+	width: 40px;
+	display: block;
+	float: right;
+}
+#sweflag {
+	width: 40px;
+	display: block;
+	margin-right: 5px;
+	margin-left: auto;
+	float: right;
+}
 .wrapper {
 	background-color: rgb(20,20,110);
 }
@@ -74,16 +103,16 @@ table {
 	}
 	#tableleft {
 		border-radius: 50px 0px 0px 0px;
-		border-right: 2px solid white;
-		border-bottom: 2px solid white;
+		border-right: 1px solid white;
+		border-bottom: 1px solid white;
 	}
 	#tablemid {
-		border-bottom: 2px solid white;
+		border-bottom: 1px solid white;
 	}
 	#tableright {
 		border-radius: 0px 50px 0px 0px;
-		border-left: 2px solid white;
-		border-bottom: 2px solid white;
+		border-left: 1px solid white;
+		border-bottom: 1px solid white;
 	}
 		#tableright h2 {
 			margin-left: 5px;
@@ -96,6 +125,7 @@ table {
 	background-color: black;
  	margin: 20px 10px 20px 10px;
 	font-family: impact, 'Times New Roman', Arial;
+	border: 2px solid white;
 }
 	#asidecamp img {
 		display: block;
@@ -106,7 +136,7 @@ table {
 #asideheader {
 	color: red;
 	background-color: black;
-	padding-top: 20px;
+	padding-top: 15px;
 	border: 0;
 	margin: 10px 10px;
 }
@@ -122,6 +152,24 @@ table {
 	padding-bottom: 20px;
 }
 footer {
-	background-color: black;
 	color: white;
+	font-family: impact, 'Times New Roman', arial;
+}
+	footer ul {
+		list-style-type: none;
+	}
+		footer ul li {
+			margin-left: -40px;
+		}
+.blackfooter {
+	background-color: black;
+}
+#socialimg {
+	display: block;
+	float: left;
+	margin: 40px 20px 0px -10px;
+}
+#trygg {
+	margin-top: 20px;
+	width: 200px;
 }
