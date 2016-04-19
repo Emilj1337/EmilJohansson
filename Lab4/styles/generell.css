@@ -1,6 +1,9 @@
 section {
 	/* border: 2px solid black; */
 }
+body {
+	background-color: rgb(20,20,110);
+}
 .blackheader {
 	background-color: black;
 }
@@ -32,17 +35,31 @@ section {
 	float: left;
 	margin-top: 5px;
 }
-.navcol {
+	.navcol {
 	background-color: rgb(50,50,50);
 }
-nav {
-	margin-top: 10px;
-	margin-bottom: 10px;
+nav ul {
+	
+	list-style-type: none;
+	margin: 0;
 	padding: 0;
+	overflow: hidden;
+	background-color: #333;
 }
 	nav ul li {
-		display: inline;
-		margin-right: 55px;
+		float: left;
+	}
+	nav ul a {
+		display: block;
+		color: white;
+		text-align: center;
+		padding: 14px 18px;
+		background-color: rgb(50,50,50);
+		text-decoration: none;
+	}
+	nav li a:hover {
+		background-color: #111;
+		text-decoration: none;
 		color: white;
 	}
 #britflag {
@@ -59,6 +76,18 @@ nav {
 }
 .wrapper {
 	background-color: rgb(20,20,110);
+}
+.bread {
+	background-color: rgb(20,20,110);
+	margin-top: 20px;
+}
+.breadh4 {
+	display: inline;
+	color: white;
+	font-family: impact, 'Times New Roman', arial;
+}
+.breadarrow {
+	margin-top: -8px;
 }
 h2 {
 	text-align: center;
@@ -119,7 +148,24 @@ table {
 			margin-right: 15px;
 		}
 .orderamount {
-	margin-bottom: 10px;
+	margin-left: 5px;
+	margin-bottom: 5px;
+	margin-top: 6px;
+	display: inline;
+}
+.orderbutton {
+	margin-right: 5px;
+	margin-bottom: 5px;
+	margin-top: 6px;
+	display: inline;
+}
+#buyboxtable {
+	width: 100%;
+	background-color: white;
+}
+.ilager {
+	width: 70%;
+	margin-right: 10px;
 }
 #asidecamp {
 	background-color: black;
@@ -150,6 +196,41 @@ table {
 	color: white;
 	text-align: center;
 	padding-bottom: 20px;
+}
+.coverimg {
+	width: 90%;
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+.buysec {
+	background-color: white;
+	width: 90%;
+}
+#buyboxprice {
+	color: red;
+	font-size: 18pt;
+	background-color: white;
+	border: none;
+	padding: 0;
+	margin-left: 0;
+	text-align: left;
+	font-weight: bold;
+}
+#gameinfo {
+	width: 90%;
+	margin: 10px 5px;
+	color: white;
+	font-family: 'Times New Roman', arial;
+	text-align: justify;
+}
+#trailerh {
+	font-family: impact, 'Times New Roman', arial;
+	font-size: 20pt;
+	color: white;
+}
+aside iframe {
+	width: 420px;
+	height: 315px;
 }
 footer {
 	color: white;

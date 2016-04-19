@@ -9,8 +9,8 @@
 	<meta name="description" content="Handla fantastiska spel till fantastiska priser hos Spelimperiet!" />
 	<meta name="keywords" content="Produkter, Spel, Nyheter, Rea, Vi rekommenderar, Erbjudande, Spelimperiet, PS4, PS3, XBOX ONE, XBOX 360, PC, PSP, WII U" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
-	<link href="styles/css/bootstrap.css" type="text/css" rel="stylesheet" />
-	<link href="styles/generell.css" type="text/css" rel="stylesheet" />
+	<link href="../styles/css/bootstrap.css" type="text/css" rel="stylesheet" />
+	<link href="../styles/generell.css" type="text/css" rel="stylesheet" />
 </head>
 
 <body>
@@ -19,7 +19,7 @@
 <header>
 	<div class="row blackheader">
 		<section class="col-sm-4">
-		<a href="index.html"><img src="images/logo.png" alt="Logotype" /></a>
+		<a href="index.html"><img src="../images/logo.png" alt="Logotype" /></a>
 		</section>
 		<section class="col-sm-3">
 		</section>
@@ -38,143 +38,84 @@
 			</form>
 		</section>
 		<section class="col-sm-1">
-			<img src="images/kundkorg.png" id="kundkorgen" alt="Kundkorgen" />
+			<img src="../images/kundkorg.png" id="kundkorgen" alt="Kundkorgen" />
 		</section>
 	</div>
 	<div class="row blackheader">
-		<section class="col-sm-7 navcol">
+		<section class="col-sm-5 navcol">
 			<nav>
 				<ul>
-					<li>PS4</li>
-					<li>PS3</li>
-					<li>XBOX ONE</li>
-					<li>XBOX 360</li>
-					<li>PC</li>
-					<li>PSP</li>
-					<li>Övrigt</li>
+					<li><a href="ps4.html">PS4</a></li>
+					<li><a href="ps3.html">PS3</a></li>
+					<li><a href="xboxone.html">XBOX ONE</a></li>
+					<li><a href="xbox360.html">XBOX 360</a></li>
+					<li><a href="pc.html">PC</a></li>
+					<li><a href="psp.html">PSP</a></li>
+					<li><a href="ovrigt.html">Övrigt</a></li>
 				</ul>
 			</nav>
 		</section>
-		<section class="col-sm-5">
-			<img src="images/britflag.png" id="britflag" alt="Storbritanniens flagga" />
-			<img src="images/sweflag.png" id="sweflag" alt="Sveriges flagga" />
+		<section class="col-sm-7">
+			<img src="../images/britflag.png" id="britflag" alt="Storbritanniens flagga" />
+			<img src="../images/sweflag.png" id="sweflag" alt="Sveriges flagga" />
 		</section>
 	</div>
 </header>
 
 <div class="bread row">
 	<section class="col-sm-12">
+		<h4 class="breadh4">Hem</h4>
+		<img src="../images/arrow.png" class="breadarrow" alt="Pil" />
+		<h4 class="breadh4">Övrigt</h4>
+		<img src="../images/arrow.png" class="breadarrow" alt="Pil" />
+		<h4 class="breadh4">Legend of Zelda: Twilight Princess HD</h4>
 	</section>
 </div>
 
 <div class="wrapper row">
 	<article class="col-sm-3">
-		<table id="tableleft">
-			<tr>
-				<td colspan="2"><h2>Nyheter</h2></td>
-			</tr>
-			<tr>
-				<td>
-					<figure>
-						<img src="images/streetfighter5.png" alt="Street Fighter 5" />
-						<figcaption>Street Fighter V - PS4</figcaption>
-					</figure>
-				</td>
-				<td>
-					<figure>
-						<img src="images/zelda.jpg" alt="Zelda Twilight Princess" />
-						<figcaption>Legend of Zelda Twilight Princess HD - Wii U</figcaption>
-					</figure>
-				</td>
-			</tr>
-			<tr>
-				<td><h3>499 SEK</h3></td>
-				<td><h3>449 SEK</h3></td>
-			</tr>
-			<tr>
-				<td><input type="number" name="Antal" class="orderamount" min="1" max="5" value="1" />
-				<input type="submit" value="Lägg till" class="orderbutton" /></td>
-				<td><input type="number" name="Antal" class="orderamount" min="1" max="5" value="1" />
-				<input type="submit" value="Lägg till" class="orderbutton" /></td>
-			</tr>
-		</table>
+		<img src="../images/zelda.jpg" class="coverimg" alt="Zelda Omslag" />
 	</article>
-	<article class="col-sm-3">
-		<table id="tablemid">
-			<tr>
-				<td colspan="2"><h2>Rea</h2></td>
-			</tr>
-			<tr>
-				<td>
-					<figure>
-						<img src="images/gta5.jpg" alt="Grand Theft Auto 5" />
-						<figcaption>Grand Theft Auto V - PS3</figcaption>
-					</figure>
-				</td>
-				<td>
-					<figure>
-						<img src="images/portal2.jpg" alt="Portal 2" />
-						<figcaption>Portal 2 - XBOX 360</figcaption>
-					</figure>
-				</td>
-			</tr>
-			<tr>
-				<td><h3>269 SEK</h3></td>
-				<td><h3>199 SEK</h3></td>
-			</tr>
-			<tr>
-				<td><input type="number" name="Antal" class="orderamount" min="1" max="5" value="1" />
-				<input type="submit" value="Lägg till" class="orderbutton" /></td>
-				<td><input type="number" name="Antal" class="orderamount" min="1" max="5" value="1" />
-				<input type="submit" value="Lägg till" class="orderbutton" /></td>
-			</tr>
-		</table>
+	<article class="col-sm-5">
+		<section class="buysec">
+			<table id="buyboxtable">
+				<tr>
+					<td><span id="buyboxprice">449 SEK</span></td>
+					<td><input type="number" name="Antal" class="orderamount" min="1" max="5" value="1" />
+					<input type="submit" value="Lägg till" class="orderbutton" /></td>
+					<td><img src="../images/ilager.png" class="ilager" alt="I lager" /></td>
+				</tr>
+			</table>
+		</section>
+		<section class="row">
+			<p id="gameinfo">Link är en ung pojke som bor i Ordon Village. Han är getherde och byns enda ryttare. 
+			En dag får han i uppdrag av borgmästaren att leverera en gåva till Hyrule Castle (ett svärd, 
+			gjort av byns svärdsman). Innan han ska ge sig i väg ska han valla getter och när han är klar 
+			märker hans barndomsvän Ilia att hästen är skadad. Hon tar med Links häst Epona till Ordon 
+			Spring, där hon ska försöka läka Eponas skada. Borgmästaren blir upprörd, för nu kanske inte 
+			Link hinner leverera gåvan i tid. Link följer efter Ilia för att hämta Epona, men Ilia vill inte 
+			att han gör det, men ändrar sig genast när hon märker att skadan inte var så allvarlig i alla fall. 
+			Just då när Link ska ge sig iväg kommer ryttare på vildsvin och kidnappar Ilia och en liten pojke 
+			som heter Colin. Colin är son till byns svärdsmästare. Link försöker stoppa dem men blir nedslagen. 
+			När han sedan vaknar upp och de är borta springer han för att rädda dem men så dras han in i Twilight 
+			Realm och förvandlas till varg. De mörka twilight-varelserna sätter honom i ett fängelse, där han 
+			träffar en varelse vid namn Midna.<br /><br />
+			Twilight Princess är en betydligt mörkare titel jämfört med Wind Waker och inriktar sig lite mer på 
+			äldre spelare. Man kommer att tillbringa mer tid på hästrygg i Twilight Princess än vad man gjort med 
+			tidigare titlar. Strid på hästrygg förekommer i spelet och ger spelaren lite nya möjligheter till att 
+			fälla sina motståndare på.</p>
+		</section>
 	</article>
-	<article class="col-sm-3">
-		<table id="tableright">
-			<tr>
-				<td colspan="2"><h2>Vi rekommenderar</h2></td>
-			</tr>
-			<tr>
-				<td>
-					<figure>
-						<img src="images/sims3.jpg" alt="The Sims 3" />
-						<figcaption>The Sims 3 - PC</figcaption>
-					</figure>
-				</td>
-				<td>
-					<figure>
-						<img src="images/fallout4.jpg" alt="Fallout 4 - PS4" />
-						<figcaption>Fallout 4 - PS4</figcaption>
-					</figure>
-				</td>
-			</tr>
-			<tr>
-				<td><h3>249 SEK</h3></td>
-				<td><h3>399 SEK</h3></td>
-			</tr>
-			<tr>
-				<td><input type="number" name="Antal" class="orderamount" min="1" max="5" value="1" />
-				<input type="submit" value="Lägg till" class="orderbutton" /></td>
-				<td><input type="number" name="Antal" class="orderamount" min="1" max="5" value="1" />
-				<input type="submit" value="Lägg till" class="orderbutton" /></td>
-			</tr>
-		</table>
-	</article>
-	<aside class="col-sm-3">
-		<div id="asidecamp">
-			<h2 id="asideheader">Erbjudande!</h2>
-			<img src="images/sweater.png" alt="En snygg gamertröja" />
-			<p id="asidelargetext">Handla för 1 000 SEK</p>
-			<p id="asidesmalltext">Få denna snygga gamertröjan på köpet!</p>
-		</div>
+	<aside class="col-sm-4">
+		<span id="trailerh">Trailer</span>
+		<iframe src="http://www.youtube.com/embed/n8hLUoK8J6I"></iframe>
 	</aside>
 </div>
 
 <footer>
 	<div class="row blackfooter">
 		<section class="col-sm-1">
-			<img src="images/social.png" alt="Social Media" id="socialimg" />
+			<img src="../images/social.png" alt="Social Media" id="socialimg" />
 		</section>
 		<section class="col-sm-3">
 			<h4>Information</h4>
@@ -200,7 +141,7 @@
 			</ul>
 		</section>
 		<section class="col-sm-2">
-		 <img src="images/trygg.png" alt="Trygg E-handel" id="trygg" />
+			<img src="../images/trygg.png" alt="Trygg E-handel" id="trygg" />
 		</section>
 	</div>	
 </footer>
