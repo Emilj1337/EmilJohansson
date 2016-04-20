@@ -18,12 +18,12 @@
 <div class="container-fluid">
 <header>
 	<div class="row blackheader">
-		<section class="col-sm-4">
-		<a href="index.html"><img src="images/logo.png" alt="Logotype" /></a>
-		</section>
-		<section class="col-sm-3">
-		</section>
-		<section class="col-sm-4">
+		<div class="col-sm-4">
+			<a href="index.html"><img src="images/logo.png" alt="Logotype" /></a>
+		</div>
+		<div class="col-sm-3">
+		</div>
+		<div class="col-sm-4">
 			<form action="mittkonto.html">
 				<input type="email" name="E-mail" required="required" class="logfield" placeholder="E-post..." />
 				<input type="password" name="Pass" required="required" class="logfield" placeholder="Lösenord..." />
@@ -36,13 +36,13 @@
 				<input type="search" class="searchfield" placeholder="Sök efter produkter..." />
 				<input type="submit" class="searchbutton" value="Sök" />
 			</form>
-		</section>
-		<section class="col-sm-1">
-			<img src="images/kundkorg.png" id="kundkorgen" alt="Kundkorgen" />
-		</section>
+		</div>
+		<div class="col-sm-1">
+			<a href="kundkorg.html"><img src="images/kundkorg.png" id="kundkorgen" alt="Kundkorgen" /></a>
+		</div>
 	</div>
 	<div class="row blackheader">
-		<section class="col-sm-5 navcol">
+		<div class="col-sm-5 navcol">
 			<nav>
 				<ul>
 					<li><a href="pages/ps4.html">PS4</a></li>
@@ -54,11 +54,11 @@
 					<li><a href="pages/ovrigt.html">Övrigt</a></li>
 				</ul>
 			</nav>
-		</section>
-		<section class="col-sm-7">
+		</div>
+		<div class="col-sm-7">
 			<img src="images/britflag.png" id="britflag" alt="Storbritanniens flagga" />
 			<img src="images/sweflag.png" id="sweflag" alt="Sveriges flagga" />
-		</section>
+		</div>
 	</div>
 </header>
 
@@ -71,13 +71,15 @@
 			<tr>
 				<td>
 					<figure>
-						<img src="images/streetfighter5.png" alt="Street Fighter 5" />
+						<a href="pages/streetfighter5.html">
+						<img src="images/streetfighter5.png" alt="Street Fighter 5" /></a>
 						<figcaption>Street Fighter V - PS4</figcaption>
 					</figure>
 				</td>
 				<td>
 					<figure>
-						<img src="images/zelda.jpg" alt="Zelda Twilight Princess" />
+						<a href="pages/zelda.html">
+						<img src="images/zelda.jpg" alt="Zelda Twilight Princess" /></a>
 						<figcaption>Legend of Zelda Twilight Princess HD - Wii U</figcaption>
 					</figure>
 				</td>
@@ -87,10 +89,14 @@
 				<td><h3>449 SEK</h3></td>
 			</tr>
 			<tr>
-				<td><input type="number" name="Antal" class="orderamount" min="1" max="5" value="1" />
-				<input type="submit" value="Lägg till" class="orderbutton" /></td>
-				<td><input type="number" name="Antal" class="orderamount" min="1" max="5" value="1" />
-				<input type="submit" value="Lägg till" class="orderbutton" /></td>
+				<td><form action="kundkorg.html">
+				<input type="number" name="Antal" class="orderamount" min="1" max="5" value="1" />
+				<input type="submit" value="Lägg till" class="orderbutton" />
+				</form></td>
+				<td><form action="kundkorg.html">
+				<input type="number" name="Antal" class="orderamount" min="1" max="5" value="1" />
+				<input type="submit" value="Lägg till" class="orderbutton" />
+				</form></td>
 			</tr>
 		</table>
 	</article>
@@ -102,13 +108,15 @@
 			<tr>
 				<td>
 					<figure>
-						<img src="images/gta5.jpg" alt="Grand Theft Auto 5" />
+						<a href="pages/gta5.html">
+						<img src="images/gta5.jpg" alt="Grand Theft Auto 5" /></a>
 						<figcaption>Grand Theft Auto V - PS3</figcaption>
 					</figure>
 				</td>
 				<td>
 					<figure>
-						<img src="images/portal2.jpg" alt="Portal 2" />
+						<a href="pages/portal2.html">
+						<img src="images/portal2.jpg" alt="Portal 2" /></a>
 						<figcaption>Portal 2 - XBOX 360</figcaption>
 					</figure>
 				</td>
@@ -118,10 +126,14 @@
 				<td><h3>199 SEK</h3></td>
 			</tr>
 			<tr>
-				<td><input type="number" name="Antal" class="orderamount" min="1" max="5" value="1" />
-				<input type="submit" value="Lägg till" class="orderbutton" /></td>
-				<td><input type="number" name="Antal" class="orderamount" min="1" max="5" value="1" />
-				<input type="submit" value="Lägg till" class="orderbutton" /></td>
+				<td><form action="kundkorg.html">
+				<input type="number" name="Antal" class="orderamount" min="1" max="5" value="1" />
+				<input type="submit" value="Lägg till" class="orderbutton" />
+				</form></td>
+				<td><form action="kundkorg.html">
+				<input type="number" name="Antal" class="orderamount" min="1" max="5" value="1" />
+				<input type="submit" value="Lägg till" class="orderbutton" />
+				</form></td>
 			</tr>
 		</table>
 	</article>
@@ -133,13 +145,15 @@
 			<tr>
 				<td>
 					<figure>
-						<img src="images/sims3.jpg" alt="The Sims 3" />
+						<a href="pages/sims3.html">
+						<img src="images/sims3.jpg" alt="The Sims 3" /></a>
 						<figcaption>The Sims 3 - PC</figcaption>
 					</figure>
 				</td>
 				<td>
 					<figure>
-						<img src="images/fallout4.jpg" alt="Fallout 4 - PS4" />
+						<a href="pages/fallout4.html">
+						<img src="images/fallout4.jpg" alt="Fallout 4 - PS4" /></a>
 						<figcaption>Fallout 4 - PS4</figcaption>
 					</figure>
 				</td>
@@ -149,54 +163,58 @@
 				<td><h3>399 SEK</h3></td>
 			</tr>
 			<tr>
-				<td><input type="number" name="Antal" class="orderamount" min="1" max="5" value="1" />
-				<input type="submit" value="Lägg till" class="orderbutton" /></td>
-				<td><input type="number" name="Antal" class="orderamount" min="1" max="5" value="1" />
-				<input type="submit" value="Lägg till" class="orderbutton" /></td>
+				<td><form action="kundkorg.html">
+				<input type="number" name="Antal" class="orderamount" min="1" max="5" value="1" />
+				<input type="submit" value="Lägg till" class="orderbutton" />
+				</form></td>
+				<td><form action="kundkorg.html">
+				<input type="number" name="Antal" class="orderamount" min="1" max="5" value="1" />
+				<input type="submit" value="Lägg till" class="orderbutton" />
+				</form></td>
 			</tr>
 		</table>
 	</article>
 	<aside class="col-sm-3">
-		<div id="asidecamp">
+		<section id="asidecamp">
 			<h2 id="asideheader">Erbjudande!</h2>
 			<img src="images/sweater.png" alt="En snygg gamertröja" />
 			<p id="asidelargetext">Handla för 1 000 SEK</p>
 			<p id="asidesmalltext">Få denna snygga gamertröjan på köpet!</p>
-		</div>
+		</section>
 	</aside>
 </div>
 
 <footer>
 	<div class="row blackfooter">
-		<section class="col-sm-1">
+		<div class="col-sm-1">
 			<img src="images/social.png" alt="Social Media" id="socialimg" />
-		</section>
-		<section class="col-sm-3">
+		</div>
+		<div class="col-sm-3">
 			<h4>Information</h4>
 			<ul>
-				<li>Leveransvillkor</li>
-				<li>Returer</li>
-				<li>Personuppgifter</li>
-				<li>Vanliga frågor</li>
+				<li><a href="pages/leveransvillkor.html">Leveransvillkor</a></li>
+				<li><a href="pages/returer.html">Returer</a></li>
+				<li><a href="pages/personuppgifter.html">Personuppgifter</a></li>
+				<li><a href="pages/vanligafragor.html">Vanliga frågor</a></li>
 			</ul>
-		</section>
-		<section class="col-sm-3">
+		</div>
+		<div class="col-sm-3">
 			<h4>Kontakt</h4>
 			<ul>
-				<li>Kundtjänst</li>
-				<li>Om oss</li>
+				<li><a href="pages/kundtjanst.html">Kundtjänst</a></li>
+				<li><a href="pages/omoss.html">Om oss</a></li>
 			</ul>
-		</section>
-		<section class="col-sm-3">
+		</div>
+		<div class="col-sm-3">
 			<h4>Mitt konto</h4>
 			<ul>
 				<li>Mina uppgifter</li>
 				<li>Mina poäng</li>
 			</ul>
-		</section>
-		<section class="col-sm-2">
+		</div>
+		<div class="col-sm-2">
 		 <img src="images/trygg.png" alt="Trygg E-handel" id="trygg" />
-		</section>
+		</div>
 	</div>	
 </footer>
 
