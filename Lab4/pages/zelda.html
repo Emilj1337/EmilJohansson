@@ -19,17 +19,18 @@
 <header>
 	<div class="row blackheader">
 		<div class="col-sm-4">
+		<h1>Spelimperiet</h1>
 		<a href="../index.html"><img src="../images/logo.png" alt="Logotype" /></a>
 		</div>
 		<div class="col-sm-3">
 		</div>
 		<div class="col-sm-4">
-			<form action="mittkonto.html">
+			<form>
 				<input type="email" name="E-mail" required="required" class="logfield" placeholder="E-post..." />
 				<input type="password" name="Pass" required="required" class="logfield" placeholder="Lösenord..." />
 				<input type="submit" value="Logga in" class="logbutton" />
 			</form>
-			<form action="blimedlem.html">
+			<form>
 				<input type="submit" value="Bli medlem" class="logbutton" />
 			</form><br />
 			<form>
@@ -38,7 +39,7 @@
 			</form>
 		</div>
 		<div class="col-sm-1">
-			<img src="../images/kundkorg.png" id="kundkorgen" alt="Kundkorgen" />
+			<a href="kundkorg.html"><img src="../images/kundkorg.png" id="kundkorgen" alt="Kundkorgen" /></a>
 		</div>
 	</div>
 	<div class="row blackheader">
@@ -81,8 +82,8 @@
 			<table id="buyboxtable">
 				<tr>
 					<td><span id="buyboxprice">449 SEK</span></td>
-					<td><input type="number" name="Antal" class="orderamount" min="1" max="5" value="1" />
-					<input type="submit" value="Lägg till" class="orderbutton" /></td>
+					<td><form action="kundkorg.html"><input type="number" name="Antal" class="orderamount" min="1" max="5" value="1" />
+					<input type="submit" value="Lägg till" class="orderbutton" /></form></td>
 					<td><img src="../images/ilager.png" class="ilager" alt="I lager" /></td>
 				</tr>
 			</table>
@@ -138,10 +139,12 @@
 			<ul>
 				<li>Mina uppgifter</li>
 				<li>Mina poäng</li>
+				<li><a href="video.html">Videos</a></li>
 			</ul>
 		</div>
 		<div class="col-sm-2">
 			<img src="../images/trygg.png" alt="Trygg E-handel" id="trygg" />
+			<span id="footcopy">&copy;Emil Johansson</span>
 		</div>
 	</div>	
 </footer>

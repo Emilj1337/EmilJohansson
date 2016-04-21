@@ -38,7 +38,7 @@
 			</form>
 		</div>
 		<div class="col-sm-1">
-			<img src="../images/kundkorg.png" id="kundkorgen" alt="Kundkorgen" />
+			<a href="kundkorg.html"><img src="../images/kundkorg.png" id="kundkorgen" alt="Kundkorgen" /></a>
 		</div>
 	</div>
 	<div class="row blackheader">
@@ -81,8 +81,8 @@
 			<table id="buyboxtable">
 				<tr>
 					<td><span id="buyboxprice">499 SEK</span></td>
-					<td><input type="number" name="Antal" class="orderamount" min="1" max="5" value="1" />
-					<input type="submit" value="Lägg till" class="orderbutton" /></td>
+					<td><form action="kundkorg.html"><input type="number" name="Antal" class="orderamount" min="1" max="5" value="1" />
+					<input type="submit" value="Lägg till" class="orderbutton" /></form></td>
 					<td><img src="../images/ilager.png" class="ilager" alt="I lager" /></td>
 				</tr>
 			</table>
@@ -112,16 +112,16 @@
 			<h4>Information</h4>
 			<ul>
 				<li><a href="leveransvillkor.html">Leveransvillkor</a></li>
-				<li><a href="returer.html">Returer</a></li>
-				<li><a href="personuppgifter.html">Personuppgifter</a></li>
-				<li><a href="vanligafragor.html">Vanliga frågor</a></li>
+				<li>Returer</li>
+				<li>Personuppgifter</li>
+				<li>Vanliga frågor</li>
 			</ul>
 		</div>
 		<div class="col-sm-3">
 			<h4>Kontakt</h4>
 			<ul>
-				<li><a href="kundtjanst.html">Kundtjänst</a></li>
-				<li><a href="omoss.html">Om oss</a></li>
+				<li>Kundtjänst</li>
+				<li>Om oss</li>
 			</ul>
 		</div>
 		<div class="col-sm-3">
@@ -129,10 +129,12 @@
 			<ul>
 				<li>Mina uppgifter</li>
 				<li>Mina poäng</li>
+				<li><a href="video.html">Videos</a></li>
 			</ul>
 		</div>
 		<div class="col-sm-2">
 			<img src="../images/trygg.png" alt="Trygg E-handel" id="trygg" />
+			<span id="footcopy">&copy;Emil Johansson</span>
 		</div>
 	</div>	
 </footer>

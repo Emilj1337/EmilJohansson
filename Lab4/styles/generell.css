@@ -1,6 +1,3 @@
-/* section {
-	border: 2px solid black;
-} */
 body {
 	background-color: rgb(20,20,110);
 }
@@ -109,6 +106,13 @@ nav ul {
 	text-align: center;
 	margin-bottom: 10px;
 }
+h1 {
+		text-indent: -9999px;
+		width: 0px;
+		height: 0px;
+		margin: 0px;
+		
+}
 h2 {
 	text-align: center;
 	background-color: gray;
@@ -119,6 +123,10 @@ h2 {
 	border: 1px solid white;
 	font-weight: bold;
 	font-family: impact, 'Times New Roman', Arial;
+	text-shadow: 2px 2px 4px white;
+}
+h4 {
+	text-shadow: 2px 2px 2px black;
 }
 h3 {
 	background-color: gray;
@@ -128,6 +136,7 @@ h3 {
 	padding: 8px 5px;
 	margin: 10px 10px;
 	text-align: center;
+	text-shadow: 2px 2px 4px black;
 }
 table {
 	background-color: black;
@@ -172,8 +181,10 @@ table {
 			margin-right: 15px;
 		}
 .listitem {
-	border: 2px solid black;
+	border: 2px solid white;
+	background-color: black;
 	margin: 10px;
+	width: 230px;
 }
 .listamount {
 	margin-top: 10px;
@@ -286,6 +297,9 @@ footer {
 	footer ul {
 		list-style-type: none;
 	}
+	footer h4, footer span {
+		text-shadow: 2px 2px 2px hotpink;
+	}
 		footer ul li {
 			margin-left: -40px;
 		}
@@ -316,5 +330,60 @@ footer {
 }
 #active {
 	background-color: lightgray;
+	color: black;
+}
+video {
+	width: 400px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+#carttable {
+	border: solid gray 2px;
+	border-spacing: 25px 5px;
+	width: 900px;
+	text-align: center;
+}
+	#carttable th {
+		text-align: center;
+	}
+.cartorderamount {
+	text-align: center;
+	width: 40px;
+	color: black;
+}
+.trashcol {
+	border-spacing: 10px 10px;
+}
+.trashimg {
+	height: 25px;
+	width: 25px;
+}
+#shipcol {
+	height: 75px;
+	font-weight: bold;
+}
+#totalsum {
+	height: 75px;
+	font-weight: bold;
+	font-size: 20pt;
+	color: red;
+}
+#shiptable {
+	border: solid gray 2px;
+	border-spacing: 10px 5px;
+	text-align: left;
+}
+	#shiptable input {
+		color: black;
+		margin-top: 3px;
+		margin-left: 5px;
+	}
+#orderbutton {
+	color: black;
+	border-radius: 5px;
+}
+select {
+	margin-left: 5px;
+	margin-top: 3px;
 	color: black;
 }

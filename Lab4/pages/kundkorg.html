@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<title>Kundkorgen</title>
+	<meta charset="utf-8" />
+	<meta name="author" content="Emil Johansson" />
+	<meta name="description" content="Din kundkorg!" />
+	<meta name="keywords" content="Kundkorg" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+	<link href="../styles/css/bootstrap.css" type="text/css" rel="stylesheet" />
+	<link href="../styles/generell.css" type="text/css" rel="stylesheet" />
+</head>
+
+<body>
+
+<div class="container-fluid">
+<header>
+	<div class="row blackheader">
+		<div class="col-sm-4">
+		<a href="../index.html"><img src="../images/logo.png" alt="Logotype" /></a>
+		</div>
+		<div class="col-sm-3">
+		</div>
+		<div class="col-sm-4">
+			<form action="mittkonto.html">
+				<input type="email" name="E-mail" required="required" class="logfield" placeholder="E-post..." />
+				<input type="password" name="Pass" required="required" class="logfield" placeholder="Lösenord..." />
+				<input type="submit" value="Logga in" class="logbutton" />
+			</form>
+			<form action="blimedlem.html">
+				<input type="submit" value="Bli medlem" class="logbutton" />
+			</form><br />
+			<form>
+				<input type="search" class="searchfield" placeholder="Sök efter produkter..." />
+				<input type="submit" class="searchbutton" value="Sök" />
+			</form>
+		</div>
+		<div class="col-sm-1">
+			<a href="kundkorg.html"><img src="../images/kundkorg.png" id="kundkorgen" alt="Kundkorgen" /></a>
+		</div>
+	</div>
+	<div class="row blackheader">
+		<div class="col-sm-5 navcol">
+			<nav>
+				<ul>
+					<li><a href="ps4.html">PS4</a></li>
+					<li><a href="ps3.html">PS3</a></li>
+					<li><a href="xboxone.html">XBOX ONE</a></li>
+					<li><a href="xbox360.html">XBOX 360</a></li>
+					<li><a href="pc.html">PC</a></li>
+					<li><a href="psp.html">PSP</a></li>
+					<li><a href="ovrigt.html">Övrigt</a></li>
+				</ul>
+			</nav>
+		</div>
+		<div class="col-sm-7">
+			<img src="../images/britflag.png" id="britflag" alt="Storbritanniens flagga" />
+			<img src="../images/sweflag.png" id="sweflag" alt="Sveriges flagga" />
+		</div>
+	</div>
+</header>
+
+<div class="wrapper row">
+	<div class="generalinfo col-sm-12">
+		<h4>Kundkorg</h4>
+		<table id="carttable">
+	<tr>
+		<th class="trashcol"></th>
+		<th>Produkt</th>
+		<th>Namn</th>
+		<th>Antal</th>
+		<th>Styckpris</th>
+		<th>Totalt</th>
+	</tr>
+	<tr>
+		<td class="trashcol"><img src="../images/can.png" alt="Soptunna" title="Ta bort vara" class="trashimg" /></td>
+		<td><img src="../images/zelda.jpg" alt="Zelda" /></td>
+		<td>Legend of Zelda: Twilight Princess HD - Wii U</td>
+		<td><input type="number" class="cartorderamount" max="10" min="1" value="1" /></td>
+		<td>449 SEK</td>
+		<td>449 SEK</td>
+	</tr>
+	<tr>
+		<td class="trashcol"><img src="../images/can.png" alt="Soptunna" title="Ta bort vara" class="trashimg" /></td>
+		<td><img src="../images/sims3.jpg" alt="The Sims 3" /></td>
+		<td>The Sims 3 - PC</td>
+		<td><input type="number" class="cartorderamount" max="10" min="1" value="1" /></td>
+		<td>249 SEK</td>
+		<td>249 SEK</td>
+	</tr>
+	<tr>
+		<td class="trashcol"></td>
+		<td id="shipcol">Frakt</td>
+		<td>-</td>
+		<td>-</td>
+		<td>-</td>
+		<td>29 SEK</td>
+	</tr>
+	<tr>
+		<td class="trashcol"></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td id="totalsum">727 SEK</td>
+	</tr>
+</table>
+	</div>
+</div>
+<div class="row">
+	<div class="generalinfo col-sm-12">
+		<h4>Leveransinformation</h4>
+		<form action="kvitto.html">
+	<table id="shiptable">
+		<tr>
+			<td class="customer"><label for="fornamn">Förnamn:</label></td>
+			<td><input required="required" name="Fornamn" id="fornamn" /></td>
+		</tr>
+		<tr>
+			<td><label for="efternamn">Efternamn:</label></td>
+			<td><input required="required" name="Efternamn" id="efternamn" /></td>
+		</tr>
+		<tr>
+			<td><label for="gatuadress">Gatuadress:</label></td>
+			<td><input required="required" name="Gatuadress" id="gatuadress" /></td>
+		</tr>
+		<tr>
+			<td><label for="postnummer">Postnummer:</label></td>
+			<td><input type="number" required="required" name="Postnummer" id="postnummer" /></td>
+		</tr>
+		<tr>
+			<td><label for="ort">Ort:</label></td>
+			<td><input required="required" name="Ort" id="ort" /></td>
+		</tr>
+		<tr>
+			<td><label for="telefonnummer">Telefonnummer:</label></td>
+			<td><input type="number" required="required" name="Telefonnummer" id="telefonnummer" /></td>
+		</tr>
+		<tr>
+			<td><label for="email">E-mail:</label></td>
+			<td><input type="email" required="required" name="Email" id="email" /></td>
+		</tr>
+		<tr>
+			<td><label for="nöjd">Hur nöjd är du med sidan?</label></td>
+			<td>
+				<select id="nöjd" name="Nöjdhet">
+					<option value="Ej valt">Välj ett alternativ</option>
+					<option value="Jättenöjd">Jättenöjd</option>
+					<option value="Nöjd">Nöjd</option>
+					<option value="Missnöjd">Missnöjd</option>
+					<option value="Jättemissnöjd">Jättemissnöjd</option>
+				</select>
+			</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td><input type="submit" value="Beställ" id="orderbutton" /></td>
+		</tr>
+	</table>
+</form>
+	</div>
+</div>
+
+<footer>
+	<div class="row blackfooter">
+		<div class="col-sm-1">
+			<img src="../images/social.png" alt="Social Media" id="socialimg" />
+		</div>
+		<div class="col-sm-3">
+			<h4>Information</h4>
+			<ul>
+				<li>Leveransvillkor</li>
+				<li>Returer</li>
+				<li>Personuppgifter</li>
+				<li>Vanliga frågor</li>
+			</ul>
+		</div>
+		<div class="col-sm-3">
+			<h4>Kontakt</h4>
+			<ul>
+				<li>Kundtjänst</li>
+				<li>Om oss</li>
+			</ul>
+		</div>
+		<div class="col-sm-3">
+			<h4>Mitt konto</h4>
+			<ul>
+				<li>Mina uppgifter</li>
+				<li>Mina poäng</li>
+				<li><a href="video.html">Videos</a></li>
+			</ul>
+		</div>
+		<div class="col-sm-2">
+			<img src="../images/trygg.png" alt="Trygg E-handel" id="trygg" />
+			<span id="footcopy">&copy;Emil Johansson</span>
+		</div>
+	</div>	
+</footer>
+
+</div>
+
+</body>
+
+</html>
